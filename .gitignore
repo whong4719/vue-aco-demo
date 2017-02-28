@@ -1,0 +1,15 @@
+# Dependenci
+node_modules
+bower_components
+app
+
+# Build files
+dist
+rev
+.tmp
+
+# IntelliJ project files
+*.iml
+.idea
+.css
+.map

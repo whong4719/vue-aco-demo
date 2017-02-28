@@ -1,0 +1,17 @@
+{
+  "name": "vue",
+  "description": "vue 即拿即用",
+  "main": "app/scripts/main.js",
+  "authors": [
+    "wwsxuan@163.com"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "moment": "^2.17.1",
+    "axios": "^0.15.3",
+    "fastclick": "^1.0.6"
+  }
+}
