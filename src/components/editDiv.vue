@@ -1,10 +1,9 @@
 <template>
     <div contenteditable="true"
          v-html="value"
-         @change="changeText">
+         @input="changeText">
     </div>
 </template>
-
 <style>
 </style>
 <script>
@@ -12,8 +11,7 @@
         props: ['value'],
         methods:{
             changeText(){
-                let innerText = this.$el.innerHTML;
-                this.$emit('input',innerText);
+                this.$emit('input',this.$el.innerHTML);
             }
         }
     }

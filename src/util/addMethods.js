@@ -1,13 +1,14 @@
 /**
- * Created by admin on 2017/2/10.
+ *
+ * Created by admin on 2017/2/28.
+ * 用于添加挂载在 vue 实例下的默认的方法
+ *
  */
 
 import moment from '../../bower_components/moment/moment.js'
-import axios from '../../bower_components/axios/dist/axios.min.js'
 import '../../bower_components/moment/src/locale/zh-cn.js'
 
 window.moment = moment;
-window.axios = axios;
 
 function addMethods(Vue) {
 
@@ -17,10 +18,6 @@ function addMethods(Vue) {
 
     Vue.prototype.moment = moment;
 
-}
-
-if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(plugin);
 }
 
 export default addMethods;
