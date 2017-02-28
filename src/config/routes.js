@@ -24,6 +24,10 @@ export default [
             {
                 path: '/page4',
                 component: resolve => require(['../pages/page4'], resolve)
+            },
+            {
+                path:'/',
+                redirect:'/page1'
             }
         ]
     },
