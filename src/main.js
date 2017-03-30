@@ -9,6 +9,7 @@ import './scss/main.scss'
 // 添加的一些组件
 import methods from './util/addMethods'
 import FastClick  from '../bower_components/fastclick/lib/fastclick'
+import '../bower_components/caret/jquery.caret'
 
 // 手机端点击加速
 FastClick.attach(document.body);

@@ -3,7 +3,11 @@
  */
 
 import editDiv from './editDiv'
+import atDiv from './atDiv'
+import slotsDemo from './slotsDemo'
 
 export default {
-    editDiv
+    editDiv,
+    atDiv,
+    slotsDemo
 }

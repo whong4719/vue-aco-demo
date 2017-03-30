@@ -21,3 +21,10 @@ li{
         text-align: center;
     }
 }
+
+div[contenteditable=true]{
+    -webkit-user-select: text !important;
+    -webkit-user-modify: read-write-plaintext-only;
+    user-select: text;
+    white-space: pre-wrap;
+}

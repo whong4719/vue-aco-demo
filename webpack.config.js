@@ -36,6 +36,10 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: require.resolve('./bower_components/jquery/dist/jquery.js'),
+                loader: 'expose?jQuery!expose?$'
+            },
+            {
                 test: /\.js(x)*$/,
                 exclude: /^node_modules$/,
                 loader: 'babel'

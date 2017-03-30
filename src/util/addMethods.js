@@ -7,7 +7,9 @@
 
 import moment from '../../bower_components/moment/moment.js'
 import '../../bower_components/moment/src/locale/zh-cn.js'
+import jQuery from 'expose?$!jQuery'
 
+window.jQuery = jQuery;
 window.moment = moment;
 
 function addMethods(Vue) {
